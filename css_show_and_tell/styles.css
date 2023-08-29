@@ -1,0 +1,48 @@
+.circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*background-color: rgb(99, 89, 89); checked to make sure circle centered properly */
+  height: 200px;
+}
+.circle div {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: #e2e2e6;
+  filter: drop-shadow(10px 10px 10px #dcd8d8);
+}
+
+body {
+  background-image: url("image1.webp");
+}
+
+h1 {
+  color: antiquewhite;
+  text-align: center;
+}
+
+.four-pointed-star {
+  position: relative;
+  margin: 1em auto;
+  width: 1em;
+  font-size: 12em;
+}
+
+.four-pointed-star:before {
+  content: "";
+  position: absolute;
+  background: rgb(225, 221, 221);
+  width: 0.5em;
+  height: 0.85em;
+  transform: rotate(-45deg) skewX(22.5deg) skewY(22.5deg);
+}
+
+.four-pointed-star:after {
+  content: "";
+  position: absolute;
+  background: rgb(225, 221, 221);
+  width: 0.9em;
+  height: 1.05em;
+  transform: rotate(45deg) skewX(22.5deg) skewY(22.5deg);
+}
